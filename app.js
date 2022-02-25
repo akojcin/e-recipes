@@ -2,12 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const recipeRoutes = require('./routes/recipeRoutes');
-const port = process.env.PORT || 3000;
+
 
 dotenv.config();
 
 // express app
 const app = express();
+
+const port = process.env.PORT || 3000;
 
 // connect to mongodb
 
